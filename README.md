@@ -10,14 +10,14 @@ Sebelum memulai, pastikan Anda telah menginstal:
 ## Instalasi
 
 1. Masuk ke direktori proyek:
-   \`\`\`bash
+```bash
    cd sql-injection-lab
-   \`\`\`
+```
 
 2. Unduh dependencies:
-   \`\`\`bash
+```bash
    go mod tidy
-   \`\`\`
+```
 
 ---
 
