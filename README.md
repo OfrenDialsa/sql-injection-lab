@@ -40,8 +40,14 @@ Buka terminal baru, lalu jalankan perintah \`inject\` untuk mulai melakukan peng
 # Mode default (basic)
 go run main.go inject --url http://localhost:8080 --mode basic
 
+# Mode Auth Bypass SQLi
+go run main.go inject --url http://localhost:8080 --mode login
+
 # Mode Time-based Blind SQLi
 go run main.go inject --url http://localhost:8080 --mode time
+
+# Mode Boolean Blind SQLi
+go run main.go inject --url http://localhost:8080 --mode boolean
 ```
 
 ---
@@ -50,8 +56,8 @@ go run main.go inject --url http://localhost:8080 --mode time
 
 | Flag | Deskripsi | Default |
 | :--- | :--- | :--- |
-| `--url\` | URL target API yang akan diuji | `http://localhost:8080\` |
-| `--mode\` | Jenis teknik: `basic`, `boolean`, `time`, `login` | `basic` |
+| `--url` | URL target API yang akan diuji | `http://localhost:8080\` |
+| `--mode` | Jenis teknik: `basic`, `boolean`, `time`, `login` | `basic` |
 
 ---
 
