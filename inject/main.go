@@ -11,6 +11,8 @@ func Run(baseURL string, mode string) {
 		runBooleanTest(baseURL)
 	case "time":
 		runTimeTest(baseURL)
+	case "login":
+		runLoginTest(baseURL)
 	default:
 		fmt.Println("Unknown mode, fallback to basic")
 		runBasicTest(baseURL)

@@ -26,5 +26,5 @@ func init() {
 	rootCmd.AddCommand(injectCmd)
 
 	injectCmd.Flags().StringVar(&targetURL, "url", "http://localhost:8080", "Target base URL")
-	injectCmd.Flags().StringVar(&mode, "mode", "basic", "Mode: basic | boolean | time")
+	injectCmd.Flags().StringVar(&mode, "mode", "basic", "Mode: basic | boolean | time | login")
 }
