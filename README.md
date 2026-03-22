@@ -1,4 +1,4 @@
-# SQL Injection Lab 🧪
+# SQL Injection Lab
 
 Repositori ini adalah lingkungan laboratorium sederhana untuk mempelajari dan menguji berbagai teknik **SQL Injection (SQLi)**. Lab ini terdiri dari dua komponen utama: server API yang sengaja dibuat rentan dan alat penguji (*tester*) otomatis.
 
@@ -27,22 +27,22 @@ Aplikasi ini menggunakan sistem *command-line interface* (CLI) berbasis Cobra.
 
 ### 1. Menjalankan Server API (Vulnerable Target)
 Jalankan server API yang akan menjadi target simulasi:
-\`\`\`bash
+ ```bash
 go run main.go api
-\`\`\`
+```
 *Server secara default berjalan di http://localhost:8080.*
 
 ### 2. Menjalankan SQL Injection Tester
 Buka terminal baru, lalu jalankan perintah \`inject\` untuk mulai melakukan pengujian.
 
 **Contoh Perintah:**
-\`\`\`bash
+ ```bash
 # Mode default (basic)
 go run main.go inject --url http://localhost:8080 --mode basic
 
 # Mode Time-based Blind SQLi
 go run main.go inject --url http://localhost:8080 --mode time
-\`\`\`
+```
 
 ---
 
@@ -50,11 +50,10 @@ go run main.go inject --url http://localhost:8080 --mode time
 
 | Flag | Deskripsi | Default |
 | :--- | :--- | :--- |
-| \`--url\` | URL target API yang akan diuji | \`http://localhost:8080\` |
-| \`--mode\` | Jenis teknik: \`basic\`, \`boolean\`, \`time\`, \`login\` | \`basic\` |
+| `--url\` | URL target API yang akan diuji | `http://localhost:8080\` |
+| `--mode\` | Jenis teknik: `basic`, `boolean`, `time`, `login` | `basic` |
 
 ---
 
 > [!WARNING]  
 > **Peringatan:** Kode ini dibuat hanya untuk tujuan edukasi dan pengujian lokal. Jangan digunakan pada sistem tanpa izin resmi.
-EOF
