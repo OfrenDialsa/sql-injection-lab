@@ -11,12 +11,13 @@ Sebelum memulai, pastikan Anda telah menginstal:
 
 1. Masuk ke direktori proyek:
 ```bash
-   cd sql-injection-lab
+cd sql-injection-lab
 ```
 
 2. Unduh dependencies:
 ```bash
-   go mod tidy
+go get modernc.org/sqlite
+go mod tidy
 ```
 
 ---
